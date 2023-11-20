@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8'/>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src='/socket.io/socket.io.js'></script>
+	<script type="text/javascript" src='jquery-3.4.1.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="sweetalert.css">
+	 <script type="text/javascript" language="javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src='sweetalert.min.js'></script>
+	<title>Alnazareth </title>
+	
+	<script type="text/javascript" src='main.js'></script>
+	<script type="text/javascript">
+
+	</script>
+
+
+</head>
+<body onload='loaded();' onKeyDown="javascript:Verificar()">
+	<div class='container'>
+		<div class="col-md-7 center-block text-center" style='float:none;'>
+			<h1></h1>
+			<div id='player_name'></div>
+			<div id="cat" class='row'></div>
+
+		</div>	
+
+	</div>
+	
+
+<!--    Modal for playername     -->
+<div class="modal-wrapper" id="popup" >
+    <div class="popup-contenedor">
+		<h2><img src='logoa121.png' id='logo_'  ></h2>
+    	<h3><i>Bienvenido(a) a la sala multijugador de<br> Alfredo Salazar</i></h3>
+		<br><br>
+    	<input type='text' id='playername' placeholder='New Playername' maxlength='11' ><br><br><br>
+		<img src='buttonplay.png' id='playbutton' style='width:200px; ' onclick='set_username();' ><br><br>
+		<img src='facebook.png' style='width:30px;' onclick='' >&nbsp;<img src='twitter.png' style='width:30px;' onclick='' >&nbsp;<img src='instagram.png' style='width:30px;' onclick='' >
+    	<!--<input type='button' id='playbutton' onclick='set_username();'  value='Comenzar ' >  -->
+		
+		
+		
+    </div>
+</div>
+
+<!-- modal wait for the opponent   -->
+
+<a href='#popup_waitfor_oponnent' id='link_wait_for_opponent'></a>
+<div class="modal-wrapper" id="popup_waitfor_oponnent" >
+    <div class="popup-contenedor2">
+	
+    	<h2>Esperando a tu oponente...</h2>
+
+    </div>
+</div>
+
+<a href='#popup_turn' id='link_popup_turn'></a>
+<div class="modal-wrapper" id="popup_turn" >
+    <div class="popup-contenedor2">
+	
+    	<h2>¡Te toca jugar primero!</h2>
+
+    </div>
+</div>
+
+<a href='#popup_turn2' id='link_popup_turn2'></a>
+<div class="modal-wrapper" id="popup_turn2" >
+    <div class="popup-contenedor2">
+	
+    	<h2>¡Turno del oponente!</h2>
+		<p>Esperando movimiento del oponente...</p>
+
+    </div>
+</div>
+
+<a href='#popup_turn3' id='link_popup_turn3'></a>
+<div class="modal-wrapper" id="popup_turn3" >
+    <div class="popup-contenedor2">
+	
+    	<h2><img src='loaderorange.gif' style='width:50%;'><br>
+		Cargando sonidos y eventos del juego...</h2>
+		
+
+    </div>
+</div>
+
+
+</body>
+</html>

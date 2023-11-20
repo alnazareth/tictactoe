@@ -1,0 +1,1 @@
+Para subirlo a red local deber entrar en el archivo main.js dentro de /client y cambiar la ip.
